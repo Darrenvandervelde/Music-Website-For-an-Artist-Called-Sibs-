@@ -1,5 +1,7 @@
 # SIBS Music Website
 
+![SIBS Music Website Preview](screenshot.png)
+
 Welcome to the official music website for **SIBS**, the Johannesburg-based rapper taking over 2025! This website showcases SIBS’ latest music, social links, biography, and booking info.
 
 ## Features
@@ -17,7 +19,7 @@ Check out the live demo here: [SIBS Music Live](https://music-website-for-an-art
 
 ### Preview
 
-![SIBS Music Website Preview](images/screenshot.png)
+
 
 > Replace the image URL above with an actual screenshot or GIF of your live site.
 
