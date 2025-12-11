@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIBS • JOZI RAPPER 2025</title>
+  <meta name="description" content="Sibs – Johannesburg rapper. Crash out now.">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6.5+ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --sa-red: #de3a3f;
+      --sa-yellow: #ffb81c;
+      --sa-blue: #002f6c;
+      --sa-green: #007749;
+      --glass: rgba(255,255,255,0.07);
+      --text: #ffffff;
+      --bg: #0a0a0a;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--bg); color:var(--text); font-family:'Space Grotesk',sans-serif; overflow-x:hidden; }
+
+    /* STICKY NAVBAR */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:999;
+      background:rgba(10,10,10,0.8); backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(255,255,255,0.1);
+      padding:1.2rem 2rem; display:flex; justify-content:space-between; align-items:center;
+    }
+    nav .logo {
+      font-size:1.9rem; font-weight:900;
+      background:linear-gradient(90deg,var(--sa-yellow),var(--sa-red));
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    }
+    nav ul { display:flex; gap:3rem; list-style:none; }
+    nav ul a { color:#fff; text-decoration:none; font-weight:700; font-size:1.1rem; text-transform:uppercase; transition:0.3s; }
+    nav ul a:hover { color:var(--sa-yellow); }
+
+    /* HERO + POLICE LIGHTS */
+    header {
+      min-height:100vh;
+      background:url('https://images.unsplash.com/photo-1551818256-e6e8e0d3a4f6?auto=format&fit=crop&q=80') center/cover,#000;
+      display:grid; place-items:center; position:relative; overflow:hidden;
+    }
+    header::before { content:''; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 20% 40%, #de3a3f 0%, transparent 50%),
+        radial-gradient(circle at 80% 60%, #0077ff 0%, transparent 50%),
+        radial-gradient(circle at 50% 20%, #ffb81c 0%, transparent 50%),
+        radial-gradient(circle at 30% 80%, #00ff9d 0%, transparent 45%);
+      background-size:200% 200%; filter:blur(80px) brightness(1.4); opacity:0.9;
+      animation:policePulse 8s ease-in-out infinite; z-index:1;
+    }
+    header::after { content:''; position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 70% 30%, #de3a3f, transparent 60%),
+        radial-gradient(circle at 10% 70%, #ffb81c, transparent 60%);
+      filter:blur(100px); opacity:0.6; animation:drift 20s linear infinite; z-index:1;
+    }
+    @keyframes policePulse {
+      0%,100%{transform:translateX(-20%) translateY(-20%) scale(1);opacity:0.7}
+      25%{transform:translateX(20%) translateY(-10%) scale(1.2);opacity:1}
+      50%{transform:translateX(-10%) translateY(20%) scale(1);opacity:0.6}
+      75%{transform:translateX(15%) translateY(-15%) scale(1.3);opacity:0.9}
+    }
+    @keyframes drift {0%{transform:translate(0,0) rotate(0)}100%{transform:translate(30%,30%) rotate(10deg)}}
+
+    .hero-content { z-index:2; text-align:center; }
+    h1 {font-size:clamp(5rem,14vw,12rem); font-weight:900;
+        background:linear-gradient(90deg,var(--sa-yellow),#fff,var(--sa-red));
+        -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+        letter-spacing:-4px;}
+    .subtitle {font-size:1.6rem; color:var(--sa-yellow); font-weight:900; letter-spacing:6px; text-transform:uppercase;}
+
+    /* SOCIAL ICONS IN HERO – CLEAN & ANIMATED */
+    .social-hero {
+      position:absolute; bottom:40px; left:50%; transform:translateX(-50%);
+      display:flex; gap:2.2rem; z-index:3;
+    }
+    .social-hero a {
+      width:56px; height:56px;
+      background:rgba(255,255,255,0.12);
+      backdrop-filter:blur(12px);
+      border-radius:50%;
+      display:grid; place-items:center;
+      color:#fff;
+      font-size:1.7rem;
+      transition:all 0.4s ease;
+    }
+    .social-hero a:hover {
+      background:var(--sa-yellow);
+      color:#000;
+      transform:translateY(-10px) scale(1.15);
+      box-shadow:0 20px 40px rgba(255,184,28,0.6);
+    }
+
+    /* GLASS CARDS */
+    .card {
+      background:var(--glass); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1);
+      border-radius:24px; padding:4rem 2rem; margin:100px auto; max-width:1200px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.6);
+    }
+    .about-card { display:flex; align-items:center; gap:5rem; flex-wrap:wrap; }
+    .about-card img { width:100%; max-width:480px; border-radius:20px; box-shadow:0 25px 50px rgba(0,0,0,0.8); object-fit:cover; }
+    .about-text { flex:1; min-width:300px; }
+
+    .spotify-embed iframe { border-radius:20px; box-shadow:0 0 70px rgba(255,184,28,0.5);}
+    @keyframes float {0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)}}
+
+    .btn {background:var(--sa-yellow); color:#000; padding:1.2rem 3rem; border-radius:50px;
+          font-weight:900; text-decoration:none; font-size:1.2rem; transition:0.3s;}
+    .btn:hover {transform:translateY(-8px); box-shadow:0 20px 40px rgba(255,184,28,0.5);}
+
+    .flag-line {height:8px; background:linear-gradient(90deg,var(--sa-red),var(--sa-yellow),#000,var(--sa-green),var(--sa-blue),#fff); margin:3rem 0;}
+
+    footer {text-align:center; padding:5rem 2rem; border-top:1px solid rgba(255,255,255,0.1);}
+
+    @media (max-width:768px) {
+      nav ul { gap:1.5rem; } nav ul a { font-size:0.95rem; }
+      .about-card { flex-direction:column; text-align:center; gap:3rem; }
+      .about-card img { max-width:380px; }
+      .card { margin:80px 20px; padding:3rem 1.5rem; }
+      .social-hero { bottom:20px; gap:1.8rem; }
+      .social-hero a { width:50px; height:50px; font-size:1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">SIBS</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#connect">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO + SOCIAL ICONS -->
+  <header>
+    <div class="hero-content">
+      <h1>SIBS</h1>
+      <div class="subtitle">jozi rapper • 2025 takeover</div>
+    </div>
+
+    <!-- SOCIAL ICONS – PERFECTLY STYLED -->
+    <div class="social-hero">
+      <a href="https://instagram.com/sibs" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://tiktok.com/@sibs" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://open.spotify.com/artist/5vRvtosFdSWn54rA2IqDmV" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="https://youtube.com/@sibs" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <div id="about" class="card about-card" style="margin-top:140px;">
+    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80" alt="Sibs">
+    <div class="about-text">
+      <h2 style="font-size:4rem; color:var(--sa-yellow); margin-bottom:1rem;">THE VOICE OF THE STREETS</h2>
+      <p style="font-size:1.7rem; line-height:1.9; margin-bottom:1.5rem;">
+        Straight outta <strong>Johannesburg</strong>. Real bars. No filter.<br>
+        <strong>Sibs</strong> spits truth over hard-hitting beats — township life, city grind, dreams bigger than the Joburg skyline.
+      </p>
+      <p style="font-size:2.4rem; color:var(--sa-yellow); font-weight:900; line-height:1.4;">
+        “Crash” is the warning shot.<br>
+        <span style="font-size:3rem; color:#fff;">2025 is the war.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+  <div id="music" class="card spotify-embed">
+    <iframe src="https://open.spotify.com/embed/artist/5vRvtosFdSWn54rA2IqDmV?utm_source=generator&theme=0"
+            width="100%" height="520" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+  </div>
+
+  <!-- CONNECT -->
+  <div id="connect" class="card">
+    <h2 style="color:var(--sa-yellow); font-size:3rem;">LOCK IN</h2>
+    <p style="font-size:1.4rem; margin:2rem 0;">
+      bookings@sibsmusic.co.za<br><br>
+      Instagram • TikTok • WhatsApp dropping soon
+    </p>
+    <a href="https://open.spotify.com/artist/5vRvtosFdSWn54rA2IqDmV" target="_blank" class="btn">RUN UP THE STREAMS</a>
+    <div class="flag-line"></div>
+    <p style="color:var(--sa-yellow); font-weight:900; font-size:2rem;">MZANSI STAND UP</p>
+  </div>
+
+  <footer>
+    © 2025 SIBS • JOHANNESBURG<br>
+    <small>Site auto-updates every time a new track drops — no sleep, just heat.</small>
+  </footer>
+
+</body>
+</html>
