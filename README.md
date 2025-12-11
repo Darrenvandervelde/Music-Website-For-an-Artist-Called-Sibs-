@@ -1,6 +1,12 @@
 # SIBS Music Website
 
+### Preview
+
 ![SIBS Music Website Preview](screenshot.png)
+
+## Live Demo
+
+Check out the live demo here: [SIBS Music Live](https://music-website-for-an-artist-called.vercel.app/)  
 
 Welcome to the official music website for **SIBS**, the Johannesburg-based rapper taking over 2025! This website showcases SIBS’ latest music, social links, biography, and booking info.
 
@@ -12,13 +18,6 @@ Welcome to the official music website for **SIBS**, the Johannesburg-based rappe
 - **Connect Section** for bookings and social media links.
 - **Responsive Design** for desktop, tablet, and mobile.
 - **Glassmorphism UI** with smooth hover animations.
-
-## Live Demo
-
-Check out the live demo here: [SIBS Music Live](https://music-website-for-an-artist-called.vercel.app/)  
-
-### Preview
-
 
 
 > Replace the image URL above with an actual screenshot or GIF of your live site.
