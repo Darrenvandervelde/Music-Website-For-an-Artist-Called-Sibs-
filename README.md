@@ -15,7 +15,11 @@ Welcome to the official music website for **SIBS**, the Johannesburg-based rappe
 
 Check out the live demo here: [SIBS Music Live](https://music-website-for-an-artist-called.vercel.app/)  
 
-> Replace the link above with your actual deployed site (Netlify, Vercel, GitHub Pages, etc.).
+### Preview
+
+![SIBS Music Website Preview](images/screenshot.png)
+
+> Replace the image URL above with an actual screenshot or GIF of your live site.
 
 ## Installation
 
