@@ -19,7 +19,6 @@ Welcome to the official music website for **SIBS**, the Johannesburg-based rappe
 - **Responsive Design** for desktop, tablet, and mobile.
 - **Glassmorphism UI** with smooth hover animations.
 
-
 > Replace the image URL above with an actual screenshot or GIF of your live site.
 
 ## Installation
@@ -28,3 +27,4 @@ Welcome to the official music website for **SIBS**, the Johannesburg-based rappe
 
 ```bash
 git clone https://github.com/yourusername/Music-Website-For-an-Artist-Called-Sibs-.git
+```
