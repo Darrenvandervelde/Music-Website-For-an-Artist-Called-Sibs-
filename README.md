@@ -3,7 +3,6 @@
 ### Preview
 
 <img src="screenshot.png" >
-
 ![SIBS Music Website Preview](screenshot.png)
 
 ## Live Demo
