@@ -42,14 +42,9 @@ This project focuses on strong UI/UX design, responsive layouts, and modern visu
 ```
 SIBS-Music-Website/
 │
-├── index.html        # Main landing page
-├── css/
-│   └── style.css     # Main stylesheet
-├── js/
-│   └── script.js     # Animations and interactions
-├── images/           # Images and visual assets
-├── screenshot.png    # Project preview image
-└── README.md         # Project documentation
+├── index.html        # Html CSS and Javascript
+├── screenshot.png  
+└── README.md         
 ```
 
 ---
