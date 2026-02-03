@@ -44,7 +44,8 @@ SIBS-Music-Website/
 │
 ├── index.html        # Html CSS and Javascript
 ├── screenshot.png  
-└── README.md         
+├── README.md
+└── LICENSE         
 ```
 
 ---
