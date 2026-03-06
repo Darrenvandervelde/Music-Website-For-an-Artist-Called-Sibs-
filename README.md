@@ -43,7 +43,7 @@ This project focuses on strong UI/UX design, responsive layouts, and modern visu
 SIBS-Music-Website/
 │
 ├── index.html        # Html CSS and Javascript
-├── screenshot.png  
+├── screenshot.png    # Screen Shot for readme file
 ├── README.md
 └── LICENSE         
 ```
