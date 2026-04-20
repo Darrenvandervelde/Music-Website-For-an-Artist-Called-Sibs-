@@ -67,7 +67,10 @@ SIBS-Music-Website/
    git clone https://github.com/yourusername/Music-Website-For-an-Artist-Called-Sibs-.git
    ```
 2. Open the project folder
-3. Run `index.html` in your browser
+   ```bash
+   cd Music-Website-For-an-Artist-Called-Sibs
+   ```
+4. Run `index.html` in your browser
 
 No additional setup is required.
 
