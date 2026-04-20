@@ -39,7 +39,7 @@ This project focuses on strong UI/UX design, responsive layouts, and modern visu
 
 ## Project Structure
 
-```
+```Bash
 SIBS-Music-Website/
 │
 ├── index.html        # Html CSS and Javascript
