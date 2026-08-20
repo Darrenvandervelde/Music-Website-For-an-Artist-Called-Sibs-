@@ -1,89 +1,76 @@
-# SIBS Music Website
 
-![SIBS Music Website Preview](screenshot.png)
+Replacing names with placeholders in the readme
+I'll create an updated README.md with clear placeholders for all artist-specific names, locations, and branding so you can easily customize it.
 
-Please click here to [view live demo](https://music-website-for-an-artist-called.vercel.app/)
 
+
+
+Edited 1 file
+
+
+
+Wrote file
+README.md
++63
+# [Artist Name] Music Website
+![ [Artist Name] Music Website Preview](screenshot.png)
+Please click here to [view live demo](https://your-demo-url.vercel.app/)
 ---
-
 ## Overview
-
-The **SIBS Music Website** is the official promotional website for **SIBS**, a Johannesburg-based rapper. The site is designed to showcase SIBS’ music, brand identity, biography, and booking information in a clean, modern, and visually engaging format.
+The **[Artist Name] Music Website** is the official promotional website for **[Artist Name]**, a [City]-based [Genre] artist. The site is designed to showcase [Artist Name]’s music, brand identity, biography, and booking information in a clean, modern, and visually engaging format.
 
 This project focuses on strong UI/UX design, responsive layouts, and modern visual effects, making it ideal as a portfolio project or a real-world artist website foundation.
-
 ---
-
 ## Table of Contents
-
 * [Features](#features)
 * [Project Structure](#project-structure)
 * [Technology](#technology)
 * [Installation](#installation)
 * [Credits](#credits)
 * [License](#license)
-
 ---
-
 ## Features
-
 * Hero section with animated police light effects
-* South African flag–inspired gradient artist name
+* [Country/Region] flag–inspired gradient artist name
 * About section highlighting the artist’s journey
 * Music section with embedded Spotify tracks
 * Connect section for bookings and social media links
 * Responsive design for desktop, tablet, and mobile
 * Glassmorphism UI with smooth hover animations
-
 ---
-
 ## Project Structure
-
 ```Bash
-SIBS-Music-Website/
+[Project-Name]/
 │
-├── index.html        # Html CSS and Javascript
-├── screenshot.png    # Screen Shot for readme file
+├── index.html          # HTML, CSS and JavaScript
+├── screenshot.png      # Screenshot for README file
 ├── README.md
-└── LICENSE         
+└── LICENSE
 ```
-
 ---
-
 ## Technology
-
 * HTML5 – Semantic structure
 * CSS3 – Custom styling, animations, and effects
 * JavaScript – Interactive elements
 * Responsive design principles
-
 ---
-
 ## Installation
-
 1. Clone the repository:
-
    ```bash
-   git clone https://github.com/yourusername/Music-Website-For-an-Artist-Called-Sibs-.git
+   git clone https://github.com/[your-username]/[repository-name].git
    ```
 2. Open the project folder
    ```bash
-   cd Music-Website-For-an-Artist-Called-Sibs
+   cd [repository-name]
    ```
-4. Run `index.html` in your browser
+3. Run `index.html` in your browser
 
 No additional setup is required.
-
 ---
-
 ## Credits
-
 This project was created for promotional, learning, and portfolio purposes.
 
-Music content and branding belong to the artist **SIBS**.
-
+Music content and branding belong to the artist **[Artist Name]**.
 ---
-
 ## License
-
 This project is open-source and available under the MIT License.
